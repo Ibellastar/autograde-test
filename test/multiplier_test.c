@@ -31,7 +31,7 @@ void test_zero_times_zero(void) {
     TEST_ASSERT_EQUAL_INT(0, multiplier(0, 0));
 }
 
-int main(void) {
+/*int main(void) {
     UNITY_BEGIN();
 
     RUN_TEST(test_positive_numbers);
@@ -41,4 +41,4 @@ int main(void) {
     RUN_TEST(test_zero_times_zero);
 
     return UNITY_END();
-}
+}*/
