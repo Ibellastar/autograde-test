@@ -29,6 +29,6 @@ jobs:
       - name: Run Tests
         run: make check || true
       - name: Grade Report
-        uses: Ibellastar/autograde-test@main
+        uses: atlas-school-classroom/atlas-autograding-reporter@main
         env:
           MAX_POINTS: 50
