@@ -9,7 +9,4 @@ void tearDown(void)
 {
 }
 
-void test_multiplier_a_5_and_b_3_ShouldReturn_15 (void)
-{
-    
-}
+//void test code
