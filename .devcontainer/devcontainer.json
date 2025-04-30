@@ -1,6 +1,6 @@
 {
     "name": "C/C++",
-    "image": "mcr.microsoft.com/devcontainers/cpp",
+    "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04",
     "features": {
       "ghcr.io/devcontainers-extra/features/apt-packages:1": {
         "packages": "meson,ninja-build,ruby-full"
