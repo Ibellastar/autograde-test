@@ -25,7 +25,7 @@ test1_1 = executable('test_negative_and_positive',
 )
 
 
-test('multiplier.c', test1_1)
+test('Negative and positive number', test1_1)
 
 test1_2 = executable('test_positive_numbers',
   sources: [
@@ -40,7 +40,7 @@ test1_2 = executable('test_positive_numbers',
 )
 
 
-test('multiplier.c', test1_2)
+test('Positive numbers', test1_2)
 
 test1_3 = executable('test_two_negatives',
   sources: [
@@ -55,7 +55,7 @@ test1_3 = executable('test_two_negatives',
 )
 
 
-test('multiplier.c', test1_3)
+test('Negative numbers', test1_3)
 
 test1_4 = executable('test_zero_multiplication',
   sources: [
@@ -70,7 +70,7 @@ test1_4 = executable('test_zero_multiplication',
 )
 
 
-test('multiplier.c', test1_4)
+test('Zero times a number', test1_4)
 
 test1_5 = executable('test_zero_times_zero',
   sources: [
@@ -85,4 +85,4 @@ test1_5 = executable('test_zero_times_zero',
 )
 
 
-test('multiplier.c', test1_5)
+test('Zero times zero', test1_5)
