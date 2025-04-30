@@ -12,13 +12,13 @@ unity_gen_runner = unity_subproject.get_variable('gen_test_runner')
 
 inc = include_directories('src')
 
-test1_1 = executable('multiplier_test',
+test1_1 = executable('test_negative_and_positive',
   sources: [
     files([
       'src' / 'multiplier.c',
-      'test' / 'multiplier_test.c',
+      'test' / 'test_negative_and_positive.c',
     ]),
-    unity_gen_runner.process('test' / 'multiplier_test.c')
+    unity_gen_runner.process('test' / 'test_negative_and_positive.c')
   ],
   include_directories: [ inc ],
   dependencies: [ unity_dependency ],
@@ -26,3 +26,63 @@ test1_1 = executable('multiplier_test',
 
 
 test('multiplier.c', test1_1)
+
+test1_2 = executable('test_positive_numbers',
+  sources: [
+    files([
+      'src' / 'multiplier.c',
+      'test' / 'test_positive_numbers.c',
+    ]),
+    unity_gen_runner.process('test' / 'test_positive_numbers.c')
+  ],
+  include_directories: [ inc ],
+  dependencies: [ unity_dependency ],
+)
+
+
+test('multiplier.c', test1_2)
+
+test1_3 = executable('test_two_negatives',
+  sources: [
+    files([
+      'src' / 'multiplier.c',
+      'test' / 'test_two_negatives.c',
+    ]),
+    unity_gen_runner.process('test' / 'test_two_negatives.c')
+  ],
+  include_directories: [ inc ],
+  dependencies: [ unity_dependency ],
+)
+
+
+test('multiplier.c', test1_3)
+
+test1_4 = executable('test_zero_multiplication',
+  sources: [
+    files([
+      'src' / 'multiplier.c',
+      'test' / 'test_zero_multiplication.c',
+    ]),
+    unity_gen_runner.process('test' / 'test_zero_multiplication.c')
+  ],
+  include_directories: [ inc ],
+  dependencies: [ unity_dependency ],
+)
+
+
+test('multiplier.c', test1_4)
+
+test1_5 = executable('test_zero_times_zero',
+  sources: [
+    files([
+      'src' / 'multiplier.c',
+      'test' / 'test_zero_times_zero.c',
+    ]),
+    unity_gen_runner.process('test' / 'test_zero_times_zero.c')
+  ],
+  include_directories: [ inc ],
+  dependencies: [ unity_dependency ],
+)
+
+
+test('multiplier.c', test1_5)
