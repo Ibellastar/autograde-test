@@ -1,5 +1,5 @@
 CLEANUP = rm -rf
-BUILD_DIR = ../../checker
+BUILD_DIR = ../../checker-output
 
 #We try to detect the OS we are running on, and adjust commands as needed
 ifeq ($(OS),Windows_NT)

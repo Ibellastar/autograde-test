@@ -1,4 +1,4 @@
-checker/
+checker-output/
 **/subprojects/*
 !**/subprojects/*.wrap
 *.out
